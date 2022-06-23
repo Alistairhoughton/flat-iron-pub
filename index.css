@@ -8,6 +8,7 @@
   margin: 0;
 }
 
+
 /* 'mobile': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -132,6 +133,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  padding-top: 40px;
 }
 
 .about-us-title {
@@ -182,10 +184,132 @@
   max-width: 80%;
 }
 
-@media only screen and (max-width: 750px) {
-.service-card {
-  grid-column: span 2;
+.content-holder {
+  background-color: rgb(253, 138, 138);
+  height: 400px;
+  width: 100%;
 }
+
+.footer-holder {
+  background-color: rgb(20, 20, 20);
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-holder {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  padding: 30px;
+  padding-left: 100px;
+  gap: 20px;
+}
+
+.contact-holder > *{
+  font-family: "Poppins", sans-serif;
+}
+
+.map-holder {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-holder > * {
+  box-sizing: border-box;
+}
+
+.contact > * {
+  color: white;
+}
+
+.contact {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+  border-right: 1px solid rgb(204, 204, 204);
+}
+
+.opening-hours > * {
+  color: white;
+}
+
+.opening-hours {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 100px;
+}
+
+.time-list {
+  list-style: none;
+}
+
+.social-holder-footer {
+  display: flex;
+  gap: 30px;
+}
+
+.social-holder-footer > * {
+  font-size: 2rem;
+  color: white;
+}
+
+.footer-title {
+  margin-bottom: 50px;
+  color: goldenrod;
+}
+/* media queries ------------------------------------ */
+
+@media only screen and (max-width: 750px) {
+  .service-card {
+    grid-column: span 2;
+  }
+
+  .footer-holder {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .contact-holder {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact {
+    width: 100%;
+    border: none;
+  }
+
+  .opening-hours {
+    width: 100%;
+    padding: 0px;
+  }
+
+   
+  .map-holder {
+    width: 100%;
+    height: 500px;
+  }
+
+  .map {
+    height: 100%;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -195,5 +319,18 @@
 
   .item-1 {
     grid-column: 1 / span 2;
+  }
+
+  .footer-holder {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .map-holder {
+    width: 100%;
+  }
+
+  .contact-holder {
+    width: 100%;
   }
 }

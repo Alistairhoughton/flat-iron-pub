@@ -185,8 +185,8 @@
 }
 
 .content-holder {
-  background-color: rgb(253, 138, 138);
-  height: 400px;
+  background-color: rgb(20, 20, 20);
+  height: 800px;
   width: 100%;
 }
 
@@ -202,7 +202,7 @@
 .contact-holder {
   width: 50%;
   height: 100%;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(34, 34, 34);
   display: flex;
   padding: 30px;
   padding-left: 100px;

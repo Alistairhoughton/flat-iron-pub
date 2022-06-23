@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* mobile 420px */
+
+/* 'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... } */
+
+.home-nav-bar {
+  width: 100%;
+  height: 60px;
+  background-color: red;
+}
+
+.main-container {
+  width: 100%;
+  padding: 0 5% 0 5%;
+  height: 100vh;
+  background-color: rgb(196, 57, 57);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center-column {
+  background-color: blue;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+
+.carousel-item {
+  background-color: grey;
+  aspect-ratio: 1/0.5;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.item-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slide-1 {
+  background-image: url(./assets/img/hisham-sayd-cyberpunk-bar.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.slide-title, .slide-paragraph {
+    color: white;
+
+}

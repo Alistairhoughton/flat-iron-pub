@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+li {
+  padding-bottom: 5px;
+}
+
 
 /* 'mobile': '640px',
       // => @media (min-width: 640px) { ... }
@@ -267,6 +271,15 @@
   color: white;
 }
 
+.social-link-icon {
+    transition: ease-out .15s;
+
+}
+
+.social-link-icon:hover {
+  color: gold;
+}
+
 .footer-title {
   margin-bottom: 50px;
   color: goldenrod;
@@ -289,6 +302,7 @@
     height: auto;
     width: 100%;
     padding: 20px;
+    gap: 120px;
   }
 
   .contact {
@@ -332,5 +346,6 @@
 
   .contact-holder {
     width: 100%;
+    
   }
 }

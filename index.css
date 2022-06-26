@@ -149,11 +149,15 @@ li {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .about-us-para {
   text-align: center;
   font-size: 1.2rem;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .services-holder {
@@ -504,6 +508,22 @@ li {
 .slide-paragraph {
     text-align: center;
     font-size: 1.2rem;
+}
+
+.about-us-title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about-us-para {
+  text-align: center;
+  font-size: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 }
 

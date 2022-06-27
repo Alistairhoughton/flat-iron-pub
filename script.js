@@ -1,15 +1,19 @@
 const openButton = document.getElementById("mobile-nav-button");
 const closeButton = document.getElementById("close-button");
-const menu = document.getElementById('mobile-nav-page');
+const menu = document.getElementById("mobile-nav-page");
+const link = document.querySelectorAll(".nav-link-item");
 
-openButton.addEventListener('click', open);
-closeButton.addEventListener("click", close);
+openButton.addEventListener("click", function () {
+  menu.classList.toggle("open");
+});
 
-function open() {
-    menu.classList.add("open");
-}
+closeButton.addEventListener("click", function () {
+  menu.classList.toggle("open");
+});
 
-function close() {
-   menu.classList.remove("open");
-}
+link.forEach((el) =>
+  el.addEventListener("click", function (e) {
+    menu.classList.toggle("open");
+  })
+);
 

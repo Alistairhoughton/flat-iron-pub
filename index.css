@@ -504,6 +504,12 @@ li {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .carousel-item {
+    aspect-ratio: 1/0.5;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .left-links {
     padding-left: 40px;
@@ -543,12 +549,6 @@ li {
 
   .carousel {
     margin-top: 70px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .service-card {
-    grid-column: span 2;
   }
 
   .footer-holder {

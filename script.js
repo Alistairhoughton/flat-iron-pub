@@ -3,17 +3,12 @@ const closeButton = document.getElementById("close-button");
 const menu = document.getElementById("mobile-nav-page");
 const link = document.querySelectorAll(".nav-link-item");
 
-openButton.addEventListener("click", function () {
+menuHandler = () => {
   menu.classList.toggle("open");
-});
+};
 
-closeButton.addEventListener("click", function () {
-  menu.classList.toggle("open");
-});
+openButton.addEventListener("click", menuHandler);
 
-link.forEach((el) =>
-  el.addEventListener("click", function (e) {
-    menu.classList.toggle("open");
-  })
-);
+closeButton.addEventListener("click", menuHandler);
 
+link.forEach((el) => el.addEventListener("click", menuHandler));

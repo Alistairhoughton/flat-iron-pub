@@ -8,7 +8,5 @@ menuHandler = () => {
 };
 
 openButton.addEventListener("click", menuHandler);
-
 closeButton.addEventListener("click", menuHandler);
-
-link.forEach((el) => el.addEventListener("click", menuHandler));
+link.forEach((el) => el.addEventListener("click", menuHandler));  

@@ -1,4 +1,3 @@
-
 const day = document.getElementById('day')
 const dayMobile = document.getElementById("day-mobile");
 
